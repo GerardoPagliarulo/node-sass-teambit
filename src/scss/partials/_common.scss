@@ -11,7 +11,8 @@
 }
 
 @mixin list-header-menu {
-    display: flex;
+    @include disp-flex;
+    @include align-it-cent;
     justify-content: flex-end;
     //list-style: none;
 }

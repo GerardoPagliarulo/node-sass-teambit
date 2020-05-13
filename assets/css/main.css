@@ -43,11 +43,14 @@ header .top-header {
 }
 
 .header-logo {
+  display: flex;
+  align-items: center;
   flex-basis: 50%;
 }
 
 .header-menu {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   flex-basis: 50%;
 }
@@ -66,11 +69,12 @@ header .top-header {
 
 .header-menu-button {
   display: flex;
+  border: 1px solid blue;
+  border-radius: 7px;
+  padding: 7px;
 }
 
 .header-menu-button .header-menu-icon {
-  display: inline-block;
-  vertical-align: middle;
   height: 18px;
   width: 18px;
   margin-right: 5px;
@@ -78,6 +82,7 @@ header .top-header {
 }
 
 .header-menu-button .header-menu-icon img {
+  height: 18px;
   width: 18px;
   position: absolute;
   top: 50%;

@@ -11,6 +11,8 @@ header {
 }
 
 .header-logo {
+    @include disp-flex;
+    @include align-it-cent;
     flex-basis: 50%;
 }
 
@@ -30,14 +32,16 @@ header {
 
 .header-menu-button {
     @include disp-flex;
+    border: 1px solid blue;
+    border-radius: 7px;
+    padding: 7px;
     .header-menu-icon {
-        display: inline-block;
-        vertical-align: middle;
         height: 18px;
         width: 18px;
         margin-right: 5px;
         position: relative;
         img {
+            height: 18px;
             width: 18px;
             position: absolute;
             top: 50%;
