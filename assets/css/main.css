@@ -1,0 +1,87 @@
+/****************
+    VARIABLES
+****************/
+
+/*************
+    COMMONS
+**************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*************
+    HEADER
+**************/
+
+header .top-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #bdb5af;
+}
+
+.header-logo {
+  flex-basis: 50%;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 50%;
+}
+
+.header-menu li {
+  margin-right: 40px;
+}
+
+.header-menu li a {
+  font-size: small;
+}
+
+.header-menu li:last-child {
+  margin-right: 0;
+}
+
+.header-menu-button {
+  display: flex;
+}
+
+.header-menu-button .header-menu-icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.header-menu-button .header-menu-icon img {
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

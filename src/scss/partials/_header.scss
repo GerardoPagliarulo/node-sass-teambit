@@ -1,0 +1,48 @@
+/*************
+    HEADER
+**************/
+header {
+    .top-header {
+        @include disp-flex;
+        @include align-it-cent;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid #bdb5af;
+    }
+}
+
+.header-logo {
+    flex-basis: 50%;
+}
+
+.header-menu {
+    @include list-header-menu;     
+    flex-basis: 50%;
+    li {
+        margin-right: 40px;
+        a {
+            font-size: $font-size-sm;
+        }    
+    &:last-child {
+        margin-right: 0;
+    } 
+    }
+}
+
+.header-menu-button {
+    @include disp-flex;
+    .header-menu-icon {
+        display: inline-block;
+        vertical-align: middle;
+        height: 18px;
+        width: 18px;
+        margin-right: 5px;
+        position: relative;
+        img {
+            width: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
