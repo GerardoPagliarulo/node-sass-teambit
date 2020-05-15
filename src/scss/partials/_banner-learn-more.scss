@@ -2,6 +2,7 @@
 BANNER LEARN MORE
 ******************/
 .banner-container {
+    @include container(1550px, 0 auto);
     @include disp-flex;
     margin-bottom: 100px;
     &.right {

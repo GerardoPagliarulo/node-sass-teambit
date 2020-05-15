@@ -194,7 +194,6 @@ section.main-pink-page .boxs-container .box-set .box-image {
   margin-bottom: 20px;
 }
 section.main-pink-page .boxs-container .box-set .box-image img {
-  width: 120px;
   height: 100px;
 }
 section.main-pink-page .boxs-container .box-set .box-text {
@@ -225,6 +224,8 @@ section.main-pink-page .end-phrase span {
 BANNER LEARN MORE
 ******************/
 .banner-container {
+  max-width: 1550px;
+  margin: 0 auto;
   display: flex;
   margin-bottom: 100px;
 }
