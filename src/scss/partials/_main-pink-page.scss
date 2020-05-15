@@ -19,7 +19,7 @@ section.main-pink-page {
     .boxs-container {
         @include container(860px, 0 auto);
         @include text-center;
-        @include disp-flex-center-sp-betw;
+        @include disp-flex-sp-betw;
         margin-bottom: 100px;
         .box-set {
             flex-basis: 31%;
