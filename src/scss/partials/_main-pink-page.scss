@@ -1,0 +1,58 @@
+section.main-pink-page {
+    //height: 1900px;
+    padding: 30px 0;    
+    background: $property-pink;
+    &.last {
+        margin-bottom: 100px;
+    }
+    .title-container {
+        @include container(650px, 0 auto);
+        @include text-center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .title {
+            font-size: $font-size-25;
+            line-height: $line-height-40;
+            font-weight: $font-weight-600;
+        }
+    }
+    .boxs-container {
+        @include container(860px, 0 auto);
+        @include text-center;
+        @include disp-flex-center-sp-betw;
+        margin-bottom: 100px;
+        .box-set {
+            flex-basis: 31%;
+            .box-image {
+                margin-bottom: 20px;
+                img {
+                    width: 120px;
+                    height: 100px;
+                }
+            }
+            .box-text {
+                line-height: $line-height-27;
+                font-size: $font-size-18;
+            }
+        }
+    }
+    .rabbit-image {
+        @include text-center;
+        padding-bottom: 100px;
+        border-bottom: 1px solid $property-grey;
+        img {
+            max-width: 280px;
+        }
+        &.after {
+            border: none;
+        }
+    }
+    .end-phrase {
+        @include text-center;
+        margin-bottom: 50px;
+        span {
+            font-weight: $font-weight-600;
+            font-size: $font-size-25;
+        }
+    }
+}

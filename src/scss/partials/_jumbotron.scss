@@ -1,0 +1,39 @@
+/************************
+SECTION: JUMBOTRON 
+*************************/
+.main-container {
+    @include container(1150px, 100px auto);
+    @include disp-flex;
+    .container-left {
+        flex-basis: 50%;
+        .jumbotron-hero {
+            .title {
+            margin-bottom: 30px;
+            line-height: $line-height-70;
+            font-size: $font-size-50;
+            font-weight: $font-weight-600;
+            }
+            .text {
+                line-height: 40px;
+                margin-bottom: $line-height-33;
+                font-size: $font-size-23;
+            }
+        }
+        .jumbotron-buttons {
+            @include blue-buttons;
+        }
+        .jumbotron-extra-login {
+            margin-bottom: 20px;
+            a {
+                color: $property-brown;
+                font-size: $font-size-14;
+            }
+        } 
+    }
+    .jumbotron-image {
+        flex-basis: 50%;
+        img {
+            max-width: 570px;
+        }
+    }
+}

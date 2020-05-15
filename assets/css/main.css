@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /****************
     VARIABLES
 ****************/
@@ -14,16 +16,15 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #000;
+  color: #58402c;
 }
 
 .container {
-  width: 1150px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
 a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -34,6 +35,10 @@ li {
 /*************
     HEADER
 **************/
+
+header {
+  margin-bottom: 40px;
+}
 
 header .top-header {
   display: flex;
@@ -60,33 +65,393 @@ header .top-header {
 }
 
 .header-menu li a {
-  font-size: small;
+  font-size: 13px;
+  font-weight: 600;
+  color: #58402c;
 }
 
 .header-menu li:last-child {
   margin-right: 0;
 }
 
-.header-menu-button {
+.header-menu li:last-child a.button {
   display: flex;
-  border: 1px solid blue;
-  border-radius: 7px;
-  padding: 7px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  color: #30488f;
+  border: 1px solid #30488f;
 }
 
-.header-menu-button .header-menu-icon {
+.header-menu li:last-child a.button .icon {
   height: 18px;
   width: 18px;
-  margin-right: 5px;
   position: relative;
 }
 
-.header-menu-button .header-menu-icon img {
+.header-menu li:last-child a.button .icon img {
   height: 18px;
   width: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.header-menu li:last-child a.button .icon {
+  margin-right: 8px;
+}
+
+/************************
+SECTION: JUMBOTRON 
+*************************/
+
+.main-container {
+  max-width: 1150px;
+  margin: 100px auto;
+  display: flex;
+}
+
+.main-container .container-left {
+  flex-basis: 50%;
+}
+
+.main-container .container-left .jumbotron-hero .title {
+  margin-bottom: 30px;
+  line-height: 70px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.main-container .container-left .jumbotron-hero .text {
+  line-height: 40px;
+  margin-bottom: 33px;
+  font-size: 23px;
+}
+
+.main-container .container-left .jumbotron-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.main-container .container-left .jumbotron-buttons a.button {
+  display: flex;
+  padding: 7px 10px;
+  border-radius: 8px;
+  padding: 9px 20px;
+  font-size: 13px;
+  color: #fff;
+  background: #30488f;
+}
+
+.main-container .container-left .jumbotron-buttons a.button .icon {
+  height: 18px;
+  width: 18px;
+  position: relative;
+}
+
+.main-container .container-left .jumbotron-buttons a.button .icon img {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-container .container-left .jumbotron-buttons a.button .icon {
+  margin-right: 5px;
+}
+
+.main-container .container-left .jumbotron-buttons > span {
+  margin: 0 20px;
+  color: #bdb5af;
+  font-size: 13px;
+}
+
+.main-container .container-left .jumbotron-extra-login {
+  margin-bottom: 20px;
+}
+
+.main-container .container-left .jumbotron-extra-login a {
+  color: #58402c;
+  font-size: 14px;
+}
+
+.main-container .jumbotron-image {
+  flex-basis: 50%;
+}
+
+.main-container .jumbotron-image img {
+  max-width: 570px;
+}
+
+section.main-pink-page {
+  padding: 30px 0;
+  background: #ffe7d2;
+}
+
+section.main-pink-page.last {
+  margin-bottom: 100px;
+}
+
+section.main-pink-page .title-container {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section.main-pink-page .title-container .title {
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+section.main-pink-page .boxs-container {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+section.main-pink-page .boxs-container .box-set {
+  flex-basis: 31%;
+}
+
+section.main-pink-page .boxs-container .box-set .box-image {
+  margin-bottom: 20px;
+}
+
+section.main-pink-page .boxs-container .box-set .box-image img {
+  width: 120px;
+  height: 100px;
+}
+
+section.main-pink-page .boxs-container .box-set .box-text {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+section.main-pink-page .rabbit-image {
+  text-align: center;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #bdb5af;
+}
+
+section.main-pink-page .rabbit-image img {
+  max-width: 280px;
+}
+
+section.main-pink-page .rabbit-image.after {
+  border: none;
+}
+
+section.main-pink-page .end-phrase {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section.main-pink-page .end-phrase span {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+/*****************
+BANNER LEARN MORE
+******************/
+
+.banner-container {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.banner-container.right {
+  justify-content: flex-end;
+}
+
+.banner-container .banner-image {
+  flex-basis: 50%;
+  margin-right: 30px;
+}
+
+.banner-container .banner-image.right {
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+.banner-container .banner-image img {
+  max-width: 770px;
+}
+
+.banner-container .banner-set {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 28%;
+}
+
+.banner-container .banner-set h2 {
+  margin-bottom: 15px;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.banner-container .banner-set p {
+  margin-bottom: 40px;
+  line-height: 33px;
+  font-size: 21px;
+}
+
+.banner-container .banner-set a {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.banner-container .banner-set .banner-set-image {
+  text-align: center;
+}
+
+.banner-container .banner-set .banner-set-image img {
+  max-width: 270px;
+}
+
+.banner-container .banner-set .banner-set-image img.review-image {
+  max-width: 320px;
+}
+
+/********************
+SECTION: WHY SURVEYS 
+*********************/
+
+section.founders-message {
+  padding-bottom: 30px;
+  background: #ffe7d2;
+}
+
+section.founders-message .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.founders-message .container .title-container {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+section.founders-message .container .title-container .title {
+  line-height: 60px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+section.founders-message .container .square {
+  max-width: 630px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 30px 20px 20px 40px;
+  border: 1px solid #bdb5af;
+  border-radius: 7px;
+  background: #fff;
+  font-size: 14px;
+  line-height: 23px;
+  position: relative;
+}
+
+section.founders-message .container .square::after {
+  content: "\F10D";
+  font-family: "Font-Awesome";
+  width: 37px;
+  height: 39px;
+  position: absolute;
+  top: -23px;
+  left: -1px;
+  z-index: 1;
+}
+
+section.founders-message .container .square .text p {
+  margin-bottom: 25px;
+}
+
+section.founders-message .container .square .general-info {
+  display: flex;
+}
+
+section.founders-message .container .square .general-info .photo {
+  display: flex;
+  align-items: center;
+}
+
+section.founders-message .container .square .general-info .photo img {
+  width: 38px;
+  margin-right: 12px;
+}
+
+section.founders-message .container .square .general-info .name-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+section.founders-message .container .square .general-info .name-info span {
+  color: #30488f;
+}
+
+section.founders-message .container .founders-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+section.founders-message .container .founders-buttons a.button {
+  display: flex;
+  padding: 7px 10px;
+  border-radius: 8px;
+  padding: 9px 20px;
+  font-size: 13px;
+  color: #fff;
+  background: #30488f;
+}
+
+section.founders-message .container .founders-buttons a.button .icon {
+  height: 18px;
+  width: 18px;
+  position: relative;
+}
+
+section.founders-message .container .founders-buttons a.button .icon img {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.founders-message .container .founders-buttons a.button .icon {
+  margin-right: 5px;
+}
+
+section.founders-message .container .founders-buttons > span {
+  margin: 0 20px;
+  color: #bdb5af;
+  font-size: 13px;
+}
+
+section.founders-message .container .founders-extra-login {
+  margin-bottom: 20px;
+}
+
+section.founders-message .container .founders-extra-login a {
+  color: #58402c;
+  font-size: 14px;
 }
 

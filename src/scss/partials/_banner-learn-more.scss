@@ -1,0 +1,49 @@
+/*****************
+BANNER LEARN MORE
+******************/
+.banner-container {
+    @include disp-flex;
+    margin-bottom: 100px;
+    &.right {
+        justify-content: flex-end;
+    }
+    .banner-image {
+        flex-basis: 50%;
+        margin-right: 30px;
+        &.right {
+            margin-right: 0px;
+            margin-left: 15px;
+        }
+        img {
+            max-width: 770px;
+        }
+    }
+    .banner-set {
+        @include disp-flex-dir-cl;
+        flex-basis: 28%;
+        h2 {
+            margin-bottom: 15px;
+            line-height: $line-height-40;
+            font-weight: $font-weight-600;
+            font-size: $font-size-25;
+        }
+        p {
+            margin-bottom: 40px;
+            line-height: $line-height-33;
+            font-size: $font-size-21;
+        }
+        a{
+            margin-bottom: 40px;
+            font-size: $font-size-18;
+        }
+        .banner-set-image {
+            @include text-center;
+            img {
+                max-width: 270px;
+            &.review-image {
+                max-width: 320px;
+            }
+            }    
+        }
+    }
+}

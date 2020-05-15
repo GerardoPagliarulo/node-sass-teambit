@@ -1,0 +1,76 @@
+/********************
+SECTION: WHY SURVEYS 
+*********************/
+section.founders-message {
+    //height: 800px;
+    padding-bottom: 30px;
+    background: $property-pink;
+    .container {
+        @include disp-flex-cl-center;
+        .title-container {
+            @include container(550px, 0 auto);
+            //@include text-center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            .title {
+                line-height: $line-height-60;
+                font-size: $font-size-40;
+                font-weight: $font-weight-600;
+            }
+        }
+        .square {
+            @include container(630px, 0 auto);
+            margin-bottom: 35px;
+            padding: 30px 20px 20px 40px;
+            border: 1px solid $property-grey;
+            border-radius: $founders-msg-square-border-rad;
+            background: $white;
+            font-size: $font-size-14;
+            line-height: $line-height-23;
+            position: relative;
+            &::after {
+                content: '\f10d';
+                font-family: 'Font-Awesome';
+                width: 37px;
+                height: 39px;
+                position: absolute;
+                top: -23px;
+                left: -1px;
+                z-index: 1;
+            }
+            .text {
+                p{
+                    margin-bottom: 25px;
+                }
+            }
+            .general-info {
+                @include disp-flex;
+                .photo {
+                    @include disp-flex-horizontal-center;
+                    img {
+                        width: 38px;
+                        margin-right: 12px;
+                    }
+                }
+                .name-info {
+                    @include disp-flex-dir-cl;
+                    line-height: $line-height-20;
+                    font-size: $font-size-13;
+                    span {
+                        color: $property-blue;
+                    }
+                }
+            }
+        }
+        .founders-buttons {
+            @include blue-buttons;
+        }
+        .founders-extra-login {
+            margin-bottom: 20px;
+            a {
+                color: $property-brown;
+                font-size: $font-size-14;
+            }
+        } 
+    }
+}

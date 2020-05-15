@@ -1,23 +1,101 @@
 /*************
     COMMONS
 **************/
-// Mixins
+// MIXINS
+// Display flex
 @mixin disp-flex {
     display: flex;
 }
 
-@mixin align-it-cent {
+@mixin disp-flex-horizontal-center {
+    @include disp-flex;
     align-items: center;
 }
 
-@mixin list-header-menu {
+@mixin disp-flex-vertical-center {
     @include disp-flex;
-    @include align-it-cent;
-    justify-content: flex-end;
-    //list-style: none;
+    justify-content: center;
 }
 
-// General
+@mixin disp-flex-center {
+    @include disp-flex-vertical-center;
+    align-items: center;
+}
+
+@mixin disp-flex-sp-betw {
+    @include disp-flex;
+    justify-content: space-between;
+
+}
+
+@mixin disp-flex-dir-cl {
+    @include disp-flex;
+    flex-direction: column;
+}
+
+@mixin disp-flex-cl-center {
+    @include disp-flex-horizontal-center;
+    flex-direction: column;
+}
+
+@mixin disp-flex-header-menu {
+    @include disp-flex-horizontal-center;
+    justify-content: flex-end;
+}
+
+// Blue Buttons set up
+@mixin blue-buttons {
+    @include disp-flex-horizontal-center;
+    margin-bottom: 25px;
+    a.button {
+        @include disp-flex;
+        @include button;
+        padding: 9px 20px;
+        font-size: $font-size-13;
+        color: $white;
+        background: $property-blue;
+        .icon {
+            margin-right: 5px;
+        }
+    }
+    & > span {
+        margin: 0 20px;
+        color: $property-grey;
+        font-size: $font-size-13;
+    }
+}
+
+// White Button
+@mixin button {
+    padding: 7px 10px;
+    border-radius: $button-border-rad;
+    .icon {
+        height: 18px;
+        width: 18px;
+        position: relative;
+        img {
+            height: 18px;
+            width: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+// Container
+@mixin container($size, $margin) {
+    max-width: $size;
+    margin: $margin;
+}
+
+// Text
+@mixin text-center {
+    text-align: center;
+}
+
+// GENERAL
 * {
     margin: 0;
     padding: 0;
@@ -26,16 +104,14 @@
 
 body {
     font-family: $font-family;
-    color: $black;
+    color: $property-brown;
 }
 
 .container {
-    width: 1150px;
-    margin: 0 auto;
+    @include container(1150px, 0 auto);
 }
 
 a {
-    color: $black;
     text-decoration: none;
 }
 
